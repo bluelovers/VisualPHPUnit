@@ -200,6 +200,11 @@
         function updateBrowser() {
             setTimeout(function() {
                 $('#container').css('height', $(document).height());
+
+                $('#container')
+					.trigger('resize')
+				;
+
             }, 100)
         }
 
