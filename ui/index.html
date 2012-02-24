@@ -278,6 +278,12 @@
 			})
 		;
 
+		$(function(){
+			if (window.location.hash) {
+				$('#' + window.location.hash).triggerHandler('click');
+			}
+		});
+
         function updateOutput() {
             $('#sort_type').unbind();
             $('#sort_type').bind('change', function() {
