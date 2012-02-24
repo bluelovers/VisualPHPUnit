@@ -265,6 +265,25 @@
             });
         });
 
+        $('#browser')
+			.on('click', '[id^="legend_"]', function() {
+				var _this = $(this);
+				var _id = _this.prop('id');
+
+				if (_id == 'legend_tests' || _id == 'legend_options') {
+					_id = 'legend_tests';
+				}
+
+				window.location.hash = '#' + _id;
+			})
+		;
+
+		$(function(){
+			if (window.location.hash) {
+				$(window.location.hash).triggerHandler('click');
+			}
+		});
+
         function updateOutput() {
             $('#sort_type').unbind();
             $('#sort_type').bind('change', function() {
