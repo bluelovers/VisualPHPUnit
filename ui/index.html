@@ -367,6 +367,10 @@
                     new Highcharts.Chart(chart);
                     $(this).fadeIn(300, function() {
                         updateBrowser();
+
+                        $(window)
+							.triggerHandler('resize')
+						;
                     });
                 });
             });
