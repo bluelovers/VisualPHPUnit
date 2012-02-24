@@ -207,6 +207,10 @@ body {
     clear:both;
 }
 
+#output .test .variables pre {
+	overflow:auto;
+}
+
 #output .light {
     float:left;
     width: 5px;
