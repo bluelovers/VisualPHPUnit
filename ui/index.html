@@ -349,8 +349,8 @@
                     $(this).fadeIn(300, function() {
                         updateBrowser();
 
-                        $('#container')
-							.trigger('resize')
+                        $(window)
+							.triggerHandler('resize')
 						;
                     });
                 });
