@@ -276,6 +276,9 @@
 
 				window.location.hash = '#' + _id;
 			})
+			.on('click', '#view_archive, #draw_graph, #run_tests' ,function(){
+				window.location.hash = '#';
+			})
 		;
 
 		$(function(){
